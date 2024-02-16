@@ -1,0 +1,50 @@
+---
+title: "readings"
+author: "Colby Reichenbach"
+date: "2024-02-16"
+output: html_document
+---
+Readings – 2
+Data science ethical considerations
+-	Main challenges
+	Privacy and anonymity: individuals right to choose which of their activities are shared
+	Data misuse: Customers agree, but not informed consent so data is misused bc agreed to but not agreed to
+	Accuracy and validity: fitness of purpose
+15
+AI policy
+-	AI is robbing students of their own original ideas
+-	Never know what you really believe, cheating yourself
+18
+-
+3 
+A decent life
+-	Consequentialism: moral stakes lie in the consequences, ends justify means- ought to act in a way that promotes the most good at lowest moral cost – ex relationship end now to reduce suffering
+-	Allows for moral luck – right consequences with wrong intentions
+Tough to always think on the consequences
+
+-	Deontology: focus on intentions – Kant
+-	For relationship, if delaying you are being dishonest and thus should end it
+-	Lying to not hurt someone’s feelings is immoral
+-	Breaking a promise universal law have to follow through even if see someone in need
+-	Virtue ethics: shift of moral concern focusing on acts to focus on status of oneself
+-	“how should I live” – assumes virtues do not conflict
+
+4
+Sandel
+-	Sailors ex
+-	utilitarianism – morality consist of weighing the pros and cons
+-	bentham - Right thing to do is what maximizes utility
+-	remove beggars froim streets and put them in workhouse bc they reduce utility of public
+
+-	objections to benthams greatest happiness principle do not give adequate weight to human dignity and individual rights, and wrongly reduces everything to scale of pleasure/pain
+
+mill – free to do whatever they want provided no harm to others – maximize utility in the long run
+ultilitarians can distinguish higher pleasures from lower ones – bentham doesn’t distinguish
+4
+
+17
+Contractualism
+What reasons and forms of reasoning are justifiable
+What wrong acts have in common is that they cannot be justified by others
+Motivated by self regard and respect for others
+What principles no one could reasonably reject
