@@ -11,7 +11,7 @@ In this course, we explore the intersection of machine learning and ethics, exam
 - **Notes**: This directory contains my notes from lectures, and readings.
 
 ## Homework Assignments
-- [Homework 1](main/HW_1.Rmd): Description of the first homework assignment.
+- [Homework 1](main/HW1.Rmd): Description of the first homework assignment.
 - [Homework 2](main/HW2): Description of the second homework assignment.
 
 ## Projects
