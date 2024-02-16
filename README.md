@@ -19,8 +19,8 @@ In this course, the focus is exploring the intersection of machine learning and 
 - [Final Project](): TBD
 
 ## Notes
-- [Lecture notes](notes.rmd): Collection of notes taken throughout the semster.
-- [Reading notes](readings.rmd): Collection of notes taken related to assigned readings.
+- [Lecture notes](notes.Rmd): Collection of notes taken throughout the semster.
+- [Reading notes](readings.Rmd): Collection of notes taken related to assigned readings.
 
 # Software
 R will be the main coding language used in this repository.
