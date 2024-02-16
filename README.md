@@ -8,19 +8,19 @@ In this course, we explore the intersection of machine learning and ethics, exam
 ## Contents
 - **Homework**: This directory contains my completed homework assignments for the course.
 - **Projects**: This directory contains my projects for the course.
-- **Notes**: This directory contains my notes from lectures, readings, and discussions.
+- **Notes**: This directory contains my notes from lectures, and readings.
 
 ## Homework Assignments
-- [Homework 1](Homework/homework1): Description of the first homework assignment.
-- [Homework 2](Homework/Hw2): Description of the second homework assignment.
+- [Homework 1](main/HW1): Description of the first homework assignment.
+- [Homework 2](main/HW2): Description of the second homework assignment.
 
 ## Projects
-- [Midterm Project]: Description of the first project.
-- [Final Project]: Description of the second project.
+- [Midterm Project]: TBD
+- [Final Project]: TBD
 
 ## Notes
-- [Lecture 1 Notes](notes/lecture1.md): Summary of key concepts covered in lecture 1.
-- [Reading 1 Notes](notes/reading1.md): Summary and reflections on the first reading assignment.
+- [Lecture notes](main/notes): Collection of notes taken throughout the semster.
+- [Reading notes](main/readings): Collection of notes taken related to assigned readings.
 
 # Software
 I will be using R throughout this repository.
