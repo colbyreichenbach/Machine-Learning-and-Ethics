@@ -11,8 +11,8 @@ In this course, the focus is exploring the intersection of machine learning and 
 - **Notes**: This directory contains my notes from lectures, and readings.
 
 ## Homework Assignments
-- [Homework 1](HW1.Rmd): Description of the first homework assignment.
-- [Homework 2](HW2.Rmd): Description of the second homework assignment.
+- [Homework 1](HW1.Rmd): Justifying Chat GTP in an academic setting.
+- [Homework 2](HW2.Rmd): Illustrate the method of KNN algorithm as well as its potential pitfalls.
 
 ## Projects
 - [Midterm Project](): TBD
