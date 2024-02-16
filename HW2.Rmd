@@ -1,0 +1,79 @@
+---
+title: "HW 2"
+author: "Colby Reichenbach"
+date: "02/16/2024"
+output: 
+  html_document:
+    number_sections: true
+---
+
+This homework is meant to illustrate the methods of classification algorithms as well as their potential pitfalls.  In class, we demonstrated K-Nearest-Neighbors using the `iris` dataset.  Today I will give you a different subset of this same data, and you will train a KNN classifier.  
+
+```{r, echo = FALSE}
+set.seed(123)
+library(class)
+
+df <- data(iris) 
+
+normal <-function(x) {
+  (x -min(x))/(max(x)-min(x))   
+}
+
+iris_norm <- as.data.frame(lapply(iris[,c(1,2,3,4)], normal))
+
+subset <- c(1:45, 58, 60:70, 82, 94, 110:150)
+iris_train <- iris_norm[subset,] 
+iris_test <- iris_norm[-subset,] 
+
+iris_target_category <- iris[subset,5]
+iris_test_category <- iris[-subset,5]
+
+```
+
+#
+Above, I have given you a training-testing partition.  Train the KNN with $K = 5$ on the training data and use this to classify the 50 test observations.  Once you have classified the test observations, create a contingency table -- like we did in class -- to evaluate which observations your algorithm is misclassifying.   
+
+```{r}
+set.seed(123)
+prediction <- knn(iris_train, iris_test, cl=iris_target_category, k = 5)
+tab <- table(prediction,iris_test_category)
+tab
+```
+
+#
+
+Discuss your results.  If you have done this correctly, you should have a classification error rate that is roughly 20% higher than what we observed in class.  Why is this the case? In particular run a summary of the `iris_test_category` as well as `iris_target_category` and discuss how this plays a role in your answer.  
+```{r}
+accuracy <- function(x) {
+sum(diag(x))/sum(rowSums(x)) * 100
+}
+accuracy(tab)
+```
+The accuracy function shows a 78% accuracy, meaning the error rate is 22%, in comparison to the in class example's error rate of roughly 3%.
+
+```{r}
+summary_test <- summary(iris_test_category)
+summary_target <- summary(iris_target_category)
+
+summary_comparison <- data.frame(
+  Test_Category = summary_test,
+  Target_Category = summary_target
+)
+
+summary_comparison
+```
+The comparison of summaries between the test category and target category show a large imbalance in the actual data against the predicted data.There are numerous reasons this may be the case, here are some possibilities...
+
+1. The training data was not representative of the actual data, leading the model to be trained in a way that over classified versicolor, while being unable to classify setosa and virginica accurately.
+
+2. The subset of data used to train the model was not large enough to accurately generalize the test data.
+
+3. The test data contained data that was harder to classify, which could be a result of overlap of data between classes.
+
+In comparison to the in class example, the large difference in error rate can be attributed to the fact that the data used for each example was not the same. In class we took a random sample of data, and in this example we were given a subset of data. This difference in data means that the test and training data between the two examples were also not the same. A different training set can lead to the model learning different ways to classify data. Since this example has a larger error rate, it implies that the example from class used a sample of data that more accurately trained the model to classify each class.
+
+
+
+Build a github repository to store your homework assignments.  Share the link in this file.  
+
+*https://github.com/colbyreichenbach/Machine-Learning-and-Ethics*
