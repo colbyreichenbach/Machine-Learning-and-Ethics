@@ -1,0 +1,167 @@
+---
+title: "notes"
+author: "Colby Reichenbach"
+date: "2024-02-16"
+output: html_document
+---
+Notes
+Moral machine learning
+Partition 
+-	70 - 90% training data, 30-10% testing data
+-	Compass decision fails in favor of white over black.
+Data privacy
+-	Consent v informed consent.
+Precise interpretation
+-	Correlation v causation
+-	Simpsons paradox – perceived trend among population (large group of data) can flip or cease to exist when looking at sub populations (smaller set of data).
+-	Confounding var. effects explanatory variable but not explanatory variable itself
+-	Latent batch effects
+Accountability for black box
+-	Reproducibility
+-	High levels of accountability cand interpretability
+Parliament AI act
+
+What seems most important of the justifications for next class?”
+
+Lecture 2
+Consequentialism: framework posits the justifiability of an action is actively determine by consequences
+
+Utilitarianism: a type of consequentialism that claims that right action is the one with the best consequences – best maximizes pleasure and minimizes pain
+
+Thought experiment: trolly problem
+Stay course doctrine of double effect
+Classical utilities commits are impartiality every person interests matter the same
+So called “act” and “rule” Utilitarianism
+Act Utilitarianism considers justifiability of a single action based on consequences in a case-by-case scenario
+Rule Utilitarianism: if a rule permitting an action nets pain that action is not permissible – broader class of actions
+Appealing qualities of Utilitarianism:
+1.)	Distills morality into numbers game
+2.)	Impartial
+3.)	Pairs 1 and 2 – closest to objective
+Data privacy: trade off bn efficiency and equity
+Moral luck: if all we care about it consequences, we may be forced to applaud to commend someone for their mal intended but benign in consequence actions
+
+Lecture 3
+Deontology: study of the nature duty and obligation
+Universal maxim: an action is correct only if you can universalize it
+Ends not means: action correct/justifiable if insofar as it at all times treats moral agents as ends and never merely meets
+Must fulfill both to be moral
+Deontology upsides
+1.	Circumvents moral luck
+Intentions more than consequences more in our control
+2.	Provides a steadfast principle limit our slippery slope tendencies – mitigates it
+3.	Protects individual liberties in a way that consequentialism does not
+Ground obligations
+Best case scenario – sentience – resolves below, resides in a spectrum
+Kant – rationality, too narrow bc excludes groups of people - (toddlers very elderly etc. not completely rational yet)/ moral agents. Could also be too broad (extended to computers/ai)
+Self awareness – too narrow
+
+
+Compass – false negatives/positives – but what does that mean for the jury that already has false negatives and positives, though they hold sentience does that play a role in their false “accusations” which would be better off done by computer to stop that from happening. In other words which is a better action?
+
+Lecture 4
+Virtue: an excellent character trait qualities conductive to flourishing / a good life – ex honesty, respect, etc
+Virtue ethics: an action is correct/justifiable if in accordance w virtue
+-	Aristotle: virtues are means bn extremes (vices)
+Upshot: virtue ethics is able to circumvent moral luck
+Appealing qualities of virtue:
+1.	Flexibility – can be honest without being forthcoming
+2.	Can be cultivated/ learned – luck involved Susan Wolfe – ex born into certain environments such as war some virtues are going to be a lot harder/ impossible to learn
+3.	At times virtue can encompass both consequentialism and deontology but it is never reduced to either of them – 
+Complication: virtues can conflict!
+Algorithmic bias – ex compass data set
+Discriminatory is to a bad thing – it is necessary to classify things – it only becomes a problem when it is arbitrary discrimination ie BIAS
+
+Lecture 5 – criticisms of deontology absent
+
+Lecture 6 - Virtue ethics criticisms
+Objections
+1.	Does it actually provide action-guidance
+-	Not all specific, is on a spectrum – grey areas
+2.	Virtues are time specific
+-	Time specific – so no moral absolutes more of moral relativity
+-	Moral subjective not objective?
+3.	Define virtuous person virtuous and we have circular reasoning
+-	Somebody who carries out virtuous act
+-	Act? One that a virtuous person would do under similar circumstances
+-	ie have to define one to define the other
+Morality subjective or objective?
+-	Subjective is person specific – the obj cannot be referenced independent of the subject
+-	Objective not person/context specific – exists independent of reference to individual
+Objectivity arguments – 
+-	Moral values are absolute, but each person’s interpretations of them are
+-	Biologically linked (could be naturalistic fallacy) – Phineas gage – frontal lobe destroyed
+Subjectivity arguments – 
+-	No moral absolutes w/o heavy qualifications and specifications to the subject – ex self-defense killing
+
+Lecture 5: 1/29/24
+Justify: offering a set reason in favor of a claim that other rational humans could not reasonably refute
+Reason: consideration in favor of a claim
+Reasons are not… intuitions, gut instinct, not reducible to our desires.
+What does reasons buy us in terms of justifiability? – it is refutable?
+Does justifiability need consensus?
+-	Plurality/majority
+-	Popularity of interpretation does not mean justifiable
+What happens when statistical justifiability and moral justifiability conflict?
+-	Rare occurrence
+-	Int the instance where they do come into conflict morality prerequisite to statistics
+
+Patient situation like we discussed before in class, have to compromise and either decide against the statistical answer and the moral answer
+
+Morality is a prerequisite of statistics
+Training v test data – if training data set is not representative of test set
+
+
+Lecture 2/16
+Support vector machine (SVM)
+-	Find line that separates classes
+-	Chooses line that maximizes margin – most generalized line
+-	“max the main distance” – in d dimensions – d-1 dimensional hyperplane
+-	W and x normal vectors
+-	W^T (x) + b = 0
+-	A1x1+a2x2=a…x… +b = 0
+-	B is offset
+-	D= |b|/||w||2 = |b|/sqrt(a12+a22 +an2)
+-	Distance bn a given pt and place
+-	D = |coordinate values/||w||2
+SVM optimization problem: 
+Distance dh bn vector phi(x0) and the hyperplane wT phi(X) + b
+DH = |WT(phi(X0)) + b| / ||w||2
+
+W* = argmax[min distance (phi(Xn))]  -  not linear or convect
+To solve it would have to recast (maximize margin) it in its dual – to make quadratic
+Not classifying algorithm by itself
+
+A1*X1 + … > 0 one class
+A1*X1 + … < 0 different class
+
+Assumption: data is linearly separable – if not there is not hyperplane
+
+Bottle example – cutting board separates bottles but no linear placement separates classes
+
+What to do? Project it to higher dimension
+Now can do horizontal lines – class of bottles shorter than other class
+Problem? Higher dimensions are much harder to compute
+
+Kernel trick: embed in higher dimension – use kernel fxn to not have to compute coordinates in a lower dimension ambient space
+
+Kernel: if we have Y,ZeX and phi: X  Rn
+K(y,z) = <phi(y),phi(z)> = phi(y)Tphi(z)
+
+Ex x,yeR2, phi: R2  R3
+Phi(z) = (Z12, sqrt(2) z1z2 , z22 , phi (x) same but w x
+
+K(x,y) < phi(x), phi(y)> = phi(x)T phi(y) = [ x12  sqrt(2) x1x2 x22]
+
+X12 y12 + sqrt(2) x1x2sqrt(2)y1y2 + x22y22
+X12 y12 + 2 x1x2y1y2 + x22y22
+X1y1+x2y2
+[(x1 x2) (y1 y2]2
+[XTY]^2 – only in R2 so got us from 3 dto 2d
+
+
+Linear XTY
+Poly [XTy+b]d
+Radid exp(-||x-y|2/gamma)
+
+
