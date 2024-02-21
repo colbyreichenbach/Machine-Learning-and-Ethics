@@ -164,4 +164,32 @@ Linear XTY
 Poly [XTy+b]d
 Radid exp(-||x-y|2/gamma)
 
+Lecture 02/21
+Decesion tree
+- an undirected graph G(E,V) that satisfies one of 4 equivalent (satisfies all 4)
+1. G is connected but acyclic - no loops
+2. G is a cyclic - simple cylce created by adding a simple edge
+3. G is disconnected if remove single edge
+4. Any two nodes in G can be connected via a unique simple path
+Classification tree
+- a binary tree that partitions the data according to features that well seperate the classes, we reach purity with terminal nodes
 
+Gini index: if p-hat is training sample prop of observatoins in the mth node of the kth class then G = P-hat * m(1- P-hat)
+g = value bn (0 to .5)
+
+x~Bin(n,p) Var[X] = np(1-p)
+
+Cross-entropy
+Dmk = -Z p-hat log(p-hat)
+
+Gini index usually quickly, more efficent, no computing algorithm, marignally more predicitivce through misclassification error rate - usually use with large data sets
+Cross entropy usually use with small data set
+
+How do tou know when to stop - in order to not overfit?
+Pruning - balance complexity and fit to make a well performing, general model
+misclassification error: E = 1- max(p-hat)
+
+Optimal sparse DTs
+min( C(X,Y,T) + lambda complexity(T) )
+
+Implemening trees - not just for algorithmic bias, but also calrity as to how classification works - like how it gets there
