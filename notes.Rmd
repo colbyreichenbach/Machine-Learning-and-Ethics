@@ -193,3 +193,13 @@ Optimal sparse DTs
 min( C(X,Y,T) + lambda complexity(T) )
 
 Implemening trees - not just for algorithmic bias, but also calrity as to how classification works - like how it gets there
+
+2/23/24
+Decision tree code
+Classification v regression trees
+method = ...
+tree functionality - easy to prune and cross validate
+a lot of branches non a tree that looks clustered - ahve to worry about overfitting - need to prune
+- need to properly prune back tree - otherwise trees will overfit --> bias, no reprociibility, bad interpretation - as going down in tree, can not tell what effects branch becasue so many branches abovve it that ALL have an effect
+- assymetry bn train and testing
+
