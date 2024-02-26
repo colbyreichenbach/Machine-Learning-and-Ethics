@@ -203,3 +203,34 @@ a lot of branches non a tree that looks clustered - ahve to worry about overfitt
 - need to properly prune back tree - otherwise trees will overfit --> bias, no reprociibility, bad interpretation - as going down in tree, can not tell what effects branch becasue so many branches abovve it that ALL have an effect
 - assymetry bn train and testing
 
+2/26 Lecture
+1. Normality
+2. contsnt variance
+3. ind. obs
+4. linearity
+
+Generalizec linear models
+1. "link" fxn, a fxn of ll that expresses a linear combo of explanatory variables
+2. data comes from an exponential family
+Decision rule C-hat:[0,1]
+
+logisitc regression not a classifcation method by itself
+
+How to mess it up
+1. fitting when diagnostics not met - assumptions not teneble
+Empirical log adds plot
+
+Fact - for a bianry,x, the expirical log adds is guranteed to be linear
+Why? - 
+let P0 be sample prop of 1's corresponding to class x=0
+let p1 be sample prop of 1's corresponding to x =1
+
+Applying logistic for very small n - bias gets very small towards 0
+if dimesnesions go up - bias is proportional
+Asuume some sort of probalistic model
+find the b-hats to make the b-hats most likey under assumption
+
+3. curse of dimensionality - as dimensionality increases, sparser data bc more space to work with, bad w knn bc distortion will occur
+4. class imbalance or training test partition that is not representable
+
+deleting imbalances so it fits purposes - where to draw the line?
