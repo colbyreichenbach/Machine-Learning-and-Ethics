@@ -13,6 +13,7 @@ In this course, the focus is exploring the intersection of machine learning and 
 ## Homework Assignments
 - [Homework 1](HW1.Rmd): Justifying Chat GTP in an academic setting.
 - [Homework 2](HW2.Rmd): Illustrate the method of KNN algorithm as well as its potential pitfalls.
+- [Homework 3](HW3.html): Discussing SVMs and decision trees. 
 
 ## Projects
 - [Midterm Project](): TBD
