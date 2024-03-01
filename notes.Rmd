@@ -234,3 +234,14 @@ find the b-hats to make the b-hats most likey under assumption
 4. class imbalance or training test partition that is not representable
 
 deleting imbalances so it fits purposes - where to draw the line?
+
+Lecture 3/1
+Notions of justice - justice as equality, just deserts
+equality as opportunity or outcome?
+deserts as merit or need?
+
+Financial aid - need/merit?
+eqaulity - application v admission
+
+nozeik - merit
+rawls - need
