@@ -245,3 +245,22 @@ eqaulity - application v admission
 
 nozeik - merit
 rawls - need
+
+
+Lecture 3/6
+discrimination: distinguishing bn classes/ groups
+arbitrary discrimination: distinguishing characteristic is irrelevant
+Try to mitigate arbitrary
+
+ex biological sex is often protected - but can be arbitrary and non-arbitrary
+lack of equal opportunity
+leads to (over) generalization
+fairness, ethics
+irrelavance, statistical can lead to blurry decesion making
+inefficent
+
+how to feel about proxies, especially when the variable it is meant to approximate is unclear?
+Wether the underlying variable is ok/ wether the proxy is attainable
+How effective is the proxy? a lot of things can be considered weak proxies
+more info in the proxy itself (experiental proxys)
+proxes have the potential to, in effect, be the same as including original user
