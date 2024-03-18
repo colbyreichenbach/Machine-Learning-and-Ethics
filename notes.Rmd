@@ -264,3 +264,36 @@ Wether the underlying variable is ok/ wether the proxy is attainable
 How effective is the proxy? a lot of things can be considered weak proxies
 more info in the proxy itself (experiental proxys)
 proxes have the potential to, in effect, be the same as including original user
+
+Lecture 3/18 
+- blackbox via northpoint inc
+1-10 -> low medium high
+- Violations
+statistical parity, disparate impact, equalized odds
+
+Is COMPAS morally defeasible?
+- nothing inherently wrong. Problem is execution
+- morally wrong to do predictive sentencing
+ Positive feedback/ conformation bias
+- overall accuracy - 65% correct class rate
+- TP+TN / Total   Comparable across racial boundaries
+- cost v benefit - the disadvantages of the system does not really justifiable only a 15% better than a coin flip
+- Utilitarinism against
+- Individual v society
+- Denotology - intent (greater public safety) v effect
+- Human discretion vs algorithmic discretoin
+virtue v honesy -  lack of trasnparancey
+- Even augmenting judge could appear - skew logistical information views each person as a data point and not a actual person
+- "Accountability"
+If compas was 100% correct, would it be defeasible?
+- purpose of punishment? deterrent v rehabilitation
+Prediction as distinct from proportionality
+
+Doestn predict when they will re offend - it is a 2 year window
+
+Slippery slope - you know re offense - but it is something that is legal in another state (ex weed)
+
+NOn transparency problems
+- playing system by offenders
+- proxies
+In S.c did not violate due process - 1. individually, 2. accurate information, only for parole, accompanied by warnings
