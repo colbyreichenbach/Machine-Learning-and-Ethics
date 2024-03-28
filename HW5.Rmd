@@ -1,0 +1,27 @@
+---
+title: "Homework 5"
+author: "Colby Reichenbach"
+date: "2024-03-27"
+output:
+  pdf_document: default
+  html_document: default
+---
+---
+title: "HW 5"
+author: "Colby Reichenbach"
+date: "03/27/2024"
+output: 
+  html_document:
+    number_sections: true
+---
+
+As a statistical consultant advising on the utilization of the COMPAS recidivism risk score algorithm in parole decisions, I would advocate for its use as a supplement for the process and not as the sole determinant. While COMPAS can provide valuable insights into the risk of a defendant reoffending, the application of it must be accompanied with judicial discretion and consideration of rehabilitative outcomes.
+
+Statistically the COMPASS system has demonstrated predictive accuracies of 61% for general recidivism and 65.1% for violent recidivism. These statistics suggest COMPAS can be a significant asset in accessing recidivism risks, as a 60% accuracy rate is insightful. This insight can be a valuable tool to make more informed and accurate final decisions. An alarming statistic shows racial disparities are apparent within the model. Black defendants are nearly twice as likely to be misclassified to reoffend than white defendants. Although some would argue that this is enough to discredit the algorithm, I argue that misclassification occurs even without the use of the model. So, the fact that we have stats that verify the model can be biased is a good tool in counteracting these biases. For example, if we know black defendants are more likely to be misclassified, when coming to a conclusion that can be a point that is taken into account when making the final decision. However, concluding that a judge is biased takes a lot more work to conclude, and often when that conclusion is made it is too late as the lives of those misclassified by human judgment are already significantly affected.
+	
+Beyond statistical evidence, ethical considerations are just as important. Utilitarianism, which prioritizes the greatest good for the greatest number, can be used to justify COMPAS’s use in parole decisions. By identifying individuals with higher risks to reoffend, the algorithm could enhance the society's security and welfare by limiting future crime. However, this approach faces criticism when taking into account the implications for those who are misclassified by the model as high-risk reoffenders, and thus suffer the consequences.  Another ethical concern is that COMPAS is black-boxxed, meaning that the algorithm is not clearly defined in what is used to make classifications. The rebuttal to this is that Judge's decisions are also black-boxxed in the sense that their thought process is not clearly labeled, therefore transparency is already a problem within the process. However, it is easier to make the algorithm transparent than a human. A human has unconscious bias that they don't even know is affecting their decisions, as well as the ability to deceive people of their thought process. However, an algorithm is much more straightforward and biases can be found in the model and corrected. Therefore, though bias is a problem in both cases, it is more easily corrected in algorithms through transparency.
+
+Other important considerations should be accounted for. In order for the incorporation of COMPAS into the decision making process to be effective, human judgment must be made by those who are trained to interpret the algorithm's results. This can be done through mandatory training of those involved in the process to ensure accurate interpretations. Furthermore, COMPAS should be used to support rehabilitation efforts and not just act as a predictor of recidivism. This would help to attack the root of reoffenders, which is not getting the help needed to rehabilitate from previous crimes. This could further attack the root of racial disparities in sentencing, as minority racial groups are often put at a disadvantage due to financial circumstances placed upon them by systematic racism. Therefore, rehabilitation efforts could be beneficial as they could help these disadvantaged groups from reoffending.
+	
+In conclusion, the COMPAS algorithm presents a tool for predicting recidivism risks, however its incorporation into parole decision-making must be accompanied by human judgment. This approach ensures fairness within the process by acknowledging the statistical efficacy is followed by ethical concerns. It is important for continued work on COMPAS to ensure transparency and mitigate any potential biases. Nevertheless, the use of COMPAS with judicial discretion takes advantage of technological advancements and safeguards its potential injustices, which in all allows it to take a role of aid rather than a substitution for the process.
+
