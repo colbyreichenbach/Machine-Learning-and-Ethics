@@ -15,6 +15,7 @@ In this course, the focus is exploring the intersection of machine learning and 
 - [Homework 2](HW2.Rmd): Illustrate the method of KNN algorithm as well as its potential pitfalls.
 - [Homework 3](HW3.Rmd): Discussing SVMs and decision trees.
 - [Homework 4](HW4.Rmd): Logistical Regression.
+- [Homework 5](HW5.pdf): Compas data set.
 ## Projects
 - [Midterm Project](): TBD
 - [Final Project](): TBD
