@@ -320,3 +320,59 @@ Three ways to incentivice informed consent
 1. ) Cliff notes alongside full terms
 2.) Compentancy check prior to consenting - quiz for terms and service can only press okay once you pass
 3.) Info mediation specialist - costs money dividing line bn those who can afford it and those who cant. People who cant afford less deserving of giving full informed consent?
+
+
+Lecture 4/1
+Federated learning: Federated learning: a decenteralized approach to model training where by decenteralized we have loal models trained on local data, the data is not passed to a global model but parameter estimates are.
+
+Ways that federated learning 
+1.) Non - IID data
+2.) we do not have to have balanced sample sizes across clients, nk can be drastically different across k=1...
+3.) dat can be censored/missing
+
+forumlation (general)
+Picture of formulas  in phoitos
+
+pk = 1/n -> iid
+pk = nk/n -> no iid federated
+
+Stochiastic gradient descent (SGD)
+"Selective calculus"
+Gradient if f is real
+Df = (partial/x1, partial /x2,...)
+Interpretation... direction of steepest ascent
+
+
+Update rule for gradient prescent:
+if we aim to minimize theta, thetai+1 = thetai (alpha) deltaf(thetai, xiyi)     -> tople of randomly selecting data xi-yi
+
+set alpha too large - > overshoot minimum
+set alpha too small -> takes forever
+
+
+FedAve - federated average - average faderated to get gloabal,
+w (t+1) = wt - m ksumk=1  nk/n deltaFk(wt) ;
+
+w(t+1) = wt - slope (deltafk(wt))
+
+w(t+1) = ksumk=1 nk/n 
+
+
+nk total in silo, n is total points
+k is superscript with w(t+1)
+
+
+Federated average - what it aims to actually do
+1.) optimize objective (emperical risk)
+1.1) Needs to be differentiable 
+2.) find global weights in each step, we local iterations w1...w2... -> w 
+
+
+wt1 +wt2 + wt3 + ... /n repeat until (wt+1 - wt ~ 0)
+abstract
+
+
+What has this bought us in terms of data privacy?
+1) never a breach in identifiable person specficic info
+2.) more general able to be applied where siloing of your data is helpful
+3.) Pair w differential privacy to protect even the upshots
