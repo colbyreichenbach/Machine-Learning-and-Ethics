@@ -395,3 +395,8 @@ NDAs
 1.) explicit informed consent befire data is manipulated
 2.) anonomouys data
 3.)data purge when leaving company
+
+
+1.) an advisiors NDA covers me, the student, by default
+2.) NDAs are meant to protect just one party - such a thing as mutual ones different bn NDAs
+3.) once an NDA expires the info is no longer proprietery
