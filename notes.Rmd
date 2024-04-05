@@ -376,3 +376,22 @@ What has this bought us in terms of data privacy?
 1) never a breach in identifiable person specficic info
 2.) more general able to be applied where siloing of your data is helpful
 3.) Pair w differential privacy to protect even the upshots
+
+
+lecture 3/5
+nda: legally enforcable contract meant to establish a confidential relationship bn two parties
+- data
+non compete: prevents employer from using training or engaging in work that is directly competitive towards current employer
+- protects intellctual property
+jan 2023: ftc suggests ban on no -competes. adopted and enforced in certain states such as california.
+dec 2023: 95% of open ai threatend bc in cali, wanted to follow ceo to microsoft
+are non competes justifiable?
+- harm principle
+- wokrer liberties
+- monopolies
+- power imbalance
+
+NDAs
+1.) explicit informed consent befire data is manipulated
+2.) anonomouys data
+3.)data purge when leaving company
