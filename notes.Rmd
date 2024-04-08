@@ -400,3 +400,42 @@ NDAs
 1.) an advisiors NDA covers me, the student, by default
 2.) NDAs are meant to protect just one party - such a thing as mutual ones different bn NDAs
 3.) once an NDA expires the info is no longer proprietery
+
+Lecture 4/8
+Explainable AI (XAI)
+- XAI: the set of proccesses and methods that allow human users to comprehend and trust the results of an MC algorithm
+* Several XAI criteria
+1.) transparency
+2.) interpretability
+3) elucidative
+
+Defn: Transparaency: a model that, in itself, is able to be understood
+ex. juxtapose SLR and DL
+
+Defn: interpretability: a model is interpretable if it provides insights that a human can appropriate
+ex. LR - response is log odds log(pi/1-pi)
+
+Defn: elucidative: the ability either directly or indirectly of a human to articulate the througough put. We can connect input to outpuct via explicit mechanisms
+
+a method trhat is not elucidative befeore and so we used past proximity
+
+Methods of explanation:
+1.) feature importance
+- GLM's (t-tests), decesion trees (proximity in tree, height of split in tree)
+
+2) Local approximations:
+compartementalize the data into smaller sections - use as apporximations for global
+ex: mean field approximation for opinion dynamics
+Each node is an individual in community, each edge shows communication bn nodes. Forms networks - directionality by arrows on edges to mark who is talking to who
+
+What is limiting distribution of these weights?
+ - cant understand the edgdes bc of the cyclic behavior, so instead of looking at it all as one, break it down locally
+Proven: locally does not behave as a ... but instead acts as a tree, which is important becasue there is no cyclic behavior
+
+
+3) VIsulization: 
+more than EDA
+PCA: principle component analysis
+
+4.) Simplification:
+additive feature attribute models
