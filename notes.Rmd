@@ -439,3 +439,49 @@ PCA: principle component analysis
 
 4.) Simplification:
 additive feature attribute models
+
+
+Guest speaker - 4/10
+1.) Goals - understanding Differential privacy
+2.) how θ that is dp
+
+Population -> DP  = model
+perfomrance directly tied to quality of data
+data extraction via MIA is x is D - attacks become easier to do once you understand the model - model is most private when you can only see inputs/outputs
+
+epsilon  - DP
+P[A(D1)eS] / P[A(D2eS] ≤ e^ epsilon
+Randomized response
+
+D1, D2 differ on x
+
+Differential privacy usually about protecting the model , but can sometimes protect model AND data
+
+Takes a single point then off that point has multipl inputs, like an array
+
+S = {Yes, No} 
+let S = Yes - inside o f() are single pt
+P[A(Yes) = Yes] / P[A(Yes) = Yes]
+= P[out = Yes | in = yes] / P[out = yes | in = no]<- conditional probability
+= .75 / .25 = 3
+
+p[A(D1)eS] / P[A(d2)eS] ≤ to e^ln(3) 
+
+Phat = 2pi - .5
+E(phat) = p
+Var(phat) >> p(1-p) / N <- real data wihtout randomized
+
+e1 - Dp
+P[A(D1)epsiolnS] ≤ e^epsilon P[A(d2)epsilonS] + ß
+
+SGD for t = 1
+(PICTURE in phone)
+sample batch 
+Batch gradient
+private 
+
+DP - SGD
+mkae gi smaller so one point cant point out where model is
+ci (0,1] cant have one but dont want 1
+
+
