@@ -16,6 +16,7 @@ In this course, the focus is exploring the intersection of machine learning and 
 - [Homework 3](HW3.Rmd): Discussing SVMs and decision trees.
 - [Homework 4](HW4.Rmd): Logistical Regression.
 - [Homework 5](HW5.pdf): Compas data set.
+- [Homework 6](HW6.pdf): FedAve, Gradients, Harm Principle.
 
 
 ## Notes
