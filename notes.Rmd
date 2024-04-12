@@ -485,3 +485,23 @@ mkae gi smaller so one point cant point out where model is
 ci (0,1] cant have one but dont want 1
 
 
+Lecture 4/12
+Principal component analysis (PCA)
+- igendecomposition
+n linearly independent eigenvectors
+X = Qlambda Q^-1 where Q is nxn invertible matrix of eigenvectors, lambda is a diagnol matrix of eigenvectors
+upshot: if we have a matrix of a specific form we can decompose it of the product of 3 matrices Q, inverse of Q, and lambda
+Deriving ED:
+A nonzero vector q is said to be an eigenvector if 
+1.) Xq = lambdaq
+2.) XQ = Qlambda <-> true if (XQ)Q^-1 = QlambdaQ^-1  _> XI = QlambdaQ^-1
+
+Covariance matirx satisfies
+
+Upshot Itransposed AeR^nxp
+C = 1/n A^TA  _>  PCA(A) = eigen(c)
+C = QcLambdacQc^-1 -> PC1: a1x1 + a2x2+...
+
+pca can be interpreted as just a rotation of your data - visulization can be used to interpret
+
+if you can visualize data can often be more intuitive than just the code
