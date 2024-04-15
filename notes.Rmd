@@ -505,3 +505,27 @@ C = QcLambdacQc^-1 -> PC1: a1x1 + a2x2+...
 pca can be interpreted as just a rotation of your data - visulization can be used to interpret
 
 if you can visualize data can often be more intuitive than just the code
+
+
+Lecture 4/15
+- Simplification: approx our model w one that has a more straight foward interpretation
+- local approx
+- feature importance in model selection
+Shapely Value: let SCF where F is our full set of predictors. Moreover, let fsu{i}Ω be our model usign all predictors of s and element i
+
+Equation - marginal impact of feature i
+
+Extremes: S can be everything in F Except for i... S = F{i} ; S = |F|-1
+|S|(|F|-(|F|-1)-1)! / |F|!   =   |S|!0! / |F|!   =  |S|!/|F|!   = (|F|-1)! / |F|!   = 1 / |F|
+
+
+S = J /= i ; |S| = 1 _> 1!(|F|-2)! / |F|!   = (|F|-2)! / |F|!  = 1 / |F|*|F-1|
+
+
+As F grows s grows substantially
+
+Pros:
+-general
+- w/ linear model, consistent with p -value selection
+cons:
+-computational expensive
