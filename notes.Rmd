@@ -529,3 +529,22 @@ Pros:
 - w/ linear model, consistent with p -value selection
 cons:
 -computational expensive
+
+Lecture 4/17
+Explainable methods -  why do this?
+Machine learning v statistics - whats the difference?
+Machine learnign is outcome - stats is model
+if doign ou rowkr correctly we should have model reasoning and outcome reasonging together
+
+If we have a model that is 100% accurate do we still need to be ablet o tinterpret it?
+yes for transparency and accountability - to esnure they are perfomring tasks ethically
+At times machine learnign can be agnostic
+
+Whatre the merits of explainability?
+- improved user trust
+- accountability
+- improved collaboration
+
+Use machine learning to help people do their job - to aid in their work. But this means that the model had to be explainable to elarn from it.
+
+Interpretable methods shoul dbe the standar, but it would be naive to say that there are not situations black boxed models woul be needed. SHould be SOMEHWAT interpretable instead of not interpretable at all.
