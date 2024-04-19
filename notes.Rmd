@@ -548,3 +548,9 @@ Whatre the merits of explainability?
 Use machine learning to help people do their job - to aid in their work. But this means that the model had to be explainable to elarn from it.
 
 Interpretable methods shoul dbe the standar, but it would be naive to say that there are not situations black boxed models woul be needed. SHould be SOMEHWAT interpretable instead of not interpretable at all.
+
+
+4/19
+Guest Lecture
+birdges gap bn step by step implemation and how it operates.
+semantics differnce between input and output - philosphical phenomenon - proccesing ignore semantics entirely, but somehow reconnect word to the semantics
