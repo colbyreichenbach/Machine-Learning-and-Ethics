@@ -17,8 +17,8 @@ In this course, the focus is exploring the intersection of machine learning and 
 - [Homework 4](HW4.Rmd): Logistical Regression.
 - [Homework 5](HW5.pdf): Compas data set.
 - [Homework 6](HW6.pdf): FedAve, Gradients, Harm Principle.
-- [Homework 7](HW6.html): HTML
-- [Homework 7](HW6.Rmd): rmd
+- [Homework 7](HW7.html): HTML
+- [Homework 7](HW7.Rmd): rmd
 
 
 
