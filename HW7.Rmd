@@ -1,0 +1,117 @@
+---
+title: "HW 7"
+author: "Colby Reichenbach"
+date: "4/19/2024"
+output:
+  pdf_document: default
+  html_document:
+    number_sections: true
+---
+
+# 
+Recall that in class we showed that for randomized response differential privacy based on a fair coin (that is a coin that lands heads up with probability $0.5$), the estimated proportion of incriminating observations $\hat{P}$ ^[in class this was the estimated proportion of students having actually cheated] was given by $\hat{P} = 2\pi-\frac{1}{2}$ where $\pi$ is the proportion of people answering affirmative to the incriminating question.  
+
+I want you to generalize this result for a potentially biased coin.  That is, for a differentially private mechanism that uses a coin landing heads up with probability $0 \leq \theta \leq 1$, find an estimate $\hat{P}$ for the proportion of incriminating observations.  This expression should be in terms of $\theta$ and $\pi$.  
+
+$\hat{P} = \theta\pi+(1-\theta)$
+
+
+#
+Next, show that this expression reduces to our result from class in the special case where $\theta = \frac{1}{2}$.
+
+$\pi = \frac{\hat{P} - (1-\theta)}{\theta}$
+
+$2\pi = \hat{P} - (1-\frac{1}{2})$
+
+$\hat{P} = 2\pi + \frac{1}{2}$ 
+
+(I am not sure I am following the right steps/ set up the equation right but I cant get this right, maybe adding a variable to take into account "yes" after landing tails? anyway can you let me know where I messed up/ how to do it in the comment, thank you!) 
+
+
+#
+Consider the additive feature attribution model: $g(x') = \phi_0+\sum_{i=1}^M{\phi_ix_i'}$ where we are aiming to explain prediction $f$ with model $g$ around input $x$ with simplified input $x'$.  Moreover, $M$ is the number of input features.  
+
+Give an expression for the explanation model $g$ in the case where all attributes are meaningless, and interpret this expression.  Secondly, give an expression for the relative contribution of feature $i$ to the explanation model.  
+
+Expression where all attributes are meaningless:
+$g(x') = \phi_0$
+
+If attributes carry no information, the model's prediction would be reliant on only the value of $\phi_0$. Therefore, since $x$ is not in the equation, regardless of what is inputted, the prediction is constant.
+
+Expression for the relative contribution of feature $i$:
+$g(x') = \phi_0 + \phi_ix'i$
+
+where $x'_i$ is the value of feature i, and $\phi_i$ is the amount of change in prediction based on $i$'s change from its original value.
+
+#
+Part of having an explainable model is being able to implement the algorithm from scratch.  Let's try and do this with `KNN`.  Write a function entitled `chebychev` that takes in two vectors and outputs the Chebychev or $L^\infty$ distance between said vectors.  I will test your function on two vectors below.  Then, write a `nearest_neighbors` function that finds the user specified $k$ nearest neighbors according to a user specified distance function (in this case $L^\infty$) to a user specified data point observation. 
+
+
+#
+Part of having an explainable model is being able to implement the algorithm from scratch.  Let's try and do this with `KNN`.  Write a function entitled `chebychev` that takes in two vectors and outputs the Chebychev or $L^\infty$ distance between said vectors.  I will test your function on two vectors below.  Then, write a `nearest_neighbors` function that finds the user specified $k$ nearest neighbors according to a user specified distance function (in this case $L^\infty$) to a user specified data point observation.  
+
+```{r}
+#student input
+#chebychev function
+cheby <- function(x,y) {
+  max(abs(x-y))
+}
+#nearest_neighbors function
+nearest_neighbors <- function(x, obs, k, distance_function) {
+  dist <- apply(x, 1, distance_function, obs)
+  distances = sort(dist)[1:k]
+  neighbor_list = which(dist %in% sort(dist)[1:k])
+  return(list(neighbor_list, distances))
+}
+
+x<- c(3,4,5)
+y<-c(7,10,1)
+cheby(x,y)
+
+```
+
+#
+Finally create a `knn_classifier` function that takes the nearest neighbors specified from the above functions and assigns a class label based on the mode class label within these nearest neighbors.  I will then test your functions by finding the five nearest neighbors to the very last observation in the `iris` dataset according to the `chebychev` distance and classifying this function accordingly.  
+
+```{r}
+library(class)
+df <- data(iris) 
+#student input
+knn_classifier = function(x,y){
+
+  groups = table(x[,y])
+  pred = groups[groups == max(groups)]
+  return(pred)
+}
+
+#data less last observation
+x = iris[1:(nrow(iris)-1),]
+#observation to be classified
+obs = iris[nrow(iris),]
+
+#find nearest neighbors
+ind = nearest_neighbors(x[,1:4], obs[,1:4],5, cheby)[[1]]
+as.matrix(x[ind,1:4])
+obs[,1:4]
+knn_classifier(x[ind,], 'Species')
+obs[,'Species']
+
+```
+
+# 
+Interpret this output.  Did you get the correct classification?  Also, if you specified $K=5$, why do you have $7$ observations included in the output dataframe?
+
+Yes, I got the correct classification. A possible reason that we see 7 observations instead of 5 is the fact that we did not specify how the model is supposed to pick a neighbor if neighbors where to share the same distance. Without clarification, the model would include all tied neighbors as the 5th nearest neighbor.
+
+
+#
+Earlier in this unit we learned about Google's DeepMind assisting in the management of acute kidney injury.  Assistance in the health care sector is always welcome, particularly if it benefits the well-being of the patient.  Even so, algorithmic assistance necessitates the acquisition and retention of sensitive health care data.  With this in mind, who should be privy to this sensitive information?  In particular, is data transfer allowed if the company managing the software is subsumed?  Should the data be made available to insurance companies who could use this to better calibrate their actuarial risk but also deny care?  Stake a position and defend it using principles discussed from the class.  
+
+
+Data should be primarily accessible to those who have direct involvement in patient treatment, or if that data would be helpful in research - with proper informed consent from the patient. This allows for proper care of patients, as well as allowing for potential advancements in research from the data.
+
+If a company who manages the data were to be submerged, I would argue that the data should be transferable with the informed consent of the patients that the data is being overtaken, which allows patients to opt in or out of their data being transferred. Extreme caution would also have to be put into place to ensure the data is transferred without leaks, or other breaches that would otherwise compromise the health data of all the patients. In the case of this happening. So transferring data should be allowed if patients are properly informed and consent to the transfer, and the companies that are exchanging the data take extreme precaution in order to keep the data secure.
+
+I argue that insurers should also be allowed to access health data of patients, under strict regulations. Healthcare costs continue to rise, however allowing insurers to access health data could help to limit some costs. Insurers would be able to create more affordable plans for low risk patients who pay more money than they need to due to their low risk, which would help cut costs for lots. This plan would also incentivise individuals to pursue healthier lifestyles, that would further cut health problems within the country. The argument then is that for high risk patients insurers would raise rates. Though a valid concern, there would have to be measures put into law that would prevent insurers from doing so. An idea, though unsure of its practicality, would be that there is a flat rate for health care insurance across the board for each patient. Based on health and risk profiles, insurers would be able to lower rates for those who pose a low risk. However, they would not be able to raise rates for those who pose a high risk. 
+
+In all, health data is very private and the security of it is paramount. If access to it is given to the right groups of people that adhere to a strict guideline to ensure it is not misused, it would allow for better patient care, and help to advance research in certain areas. It could also, in terms of the insurance companies, allow for more affordable healthcare for many. It is very important to remember, however, that without proper security of the data, and no laws for those obtaining it to follow, it could lead to various serious issues.
