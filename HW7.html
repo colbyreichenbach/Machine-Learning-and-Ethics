@@ -388,25 +388,6 @@ messed up/ how to do it in the comment, thank you!)</p>
 </div>
 <div id="section-2" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> </h1>
-<p>Consider the additive feature attribution model: <span class="math inline">\(g(x&#39;) =
-\phi_0+\sum_{i=1}^M{\phi_ix_i&#39;}\)</span> where we are aiming to
-explain prediction <span class="math inline">\(f\)</span> with model
-<span class="math inline">\(g\)</span> around input <span class="math inline">\(x\)</span> with simplified input <span class="math inline">\(x&#39;\)</span>. Moreover, <span class="math inline">\(M\)</span> is the number of input features.</p>
-<p>Give an expression for the explanation model <span class="math inline">\(g\)</span> in the case where all attributes are
-meaningless, and interpret this expression. Secondly, give an expression
-for the relative contribution of feature <span class="math inline">\(i\)</span> to the explanation model.</p>
-<p>Expression where all attributes are meaningless: <span class="math inline">\(g(x&#39;) = \phi_0\)</span></p>
-<p>If attributes carry no information, the model’s prediction would be
-reliant on only the value of <span class="math inline">\(\phi_0\)</span>. Therefore, since <span class="math inline">\(x\)</span> is not in the equation, regardless of
-what is inputted, the prediction is constant.</p>
-<p>Expression for the relative contribution of feature <span class="math inline">\(i\)</span>: <span class="math inline">\(g(x&#39;)
-= \phi_0 + \phi_ix&#39;i\)</span></p>
-<p>where <span class="math inline">\(x&#39;_i\)</span> is the value of
-feature i, and <span class="math inline">\(\phi_i\)</span> is the amount
-of change in prediction based on <span class="math inline">\(i\)</span>’s change from its original value.</p>
-</div>
-<div id="section-3" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> </h1>
 <p>Part of having an explainable model is being able to implement the
 algorithm from scratch. Let’s try and do this with <code>KNN</code>.
 Write a function entitled <code>chebychev</code> that takes in two
@@ -417,8 +398,8 @@ will test your function on two vectors below. Then, write a
 user specified distance function (in this case <span class="math inline">\(L^\infty\)</span>) to a user specified data point
 observation.</p>
 </div>
-<div id="section-4" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> </h1>
+<div id="section-3" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> </h1>
 <p>Part of having an explainable model is being able to implement the
 algorithm from scratch. Let’s try and do this with <code>KNN</code>.
 Write a function entitled <code>chebychev</code> that takes in two
@@ -446,8 +427,8 @@ y&lt;-c(7,10,1)
 cheby(x,y)</code></pre>
 <pre><code>## [1] 6</code></pre>
 </div>
-<div id="section-5" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> </h1>
+<div id="section-4" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> </h1>
 <p>Finally create a <code>knn_classifier</code> function that takes the
 nearest neighbors specified from the above functions and assigns a class
 label based on the mode class label within these nearest neighbors. I
@@ -491,8 +472,8 @@ as.matrix(x[ind,1:4])</code></pre>
 <pre><code>## [1] virginica
 ## Levels: setosa versicolor virginica</code></pre>
 </div>
-<div id="section-6" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> </h1>
+<div id="section-5" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> </h1>
 <p>Interpret this output. Did you get the correct classification? Also,
 if you specified <span class="math inline">\(K=5\)</span>, why do you
 have <span class="math inline">\(7\)</span> observations included in the
@@ -503,8 +484,8 @@ model is supposed to pick a neighbor if neighbors where to share the
 same distance. Without clarification, the model would include all tied
 neighbors as the 5th nearest neighbor.</p>
 </div>
-<div id="section-7" class="section level1" number="8">
-<h1><span class="header-section-number">8</span> </h1>
+<div id="section-6" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> </h1>
 <p>Earlier in this unit we learned about Google’s DeepMind assisting in
 the management of acute kidney injury. Assistance in the health care
 sector is always welcome, particularly if it benefits the well-being of
