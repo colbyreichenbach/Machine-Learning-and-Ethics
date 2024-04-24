@@ -29,21 +29,6 @@ $\hat{P} = 2\pi + \frac{1}{2}$
 
 
 #
-Consider the additive feature attribution model: $g(x') = \phi_0+\sum_{i=1}^M{\phi_ix_i'}$ where we are aiming to explain prediction $f$ with model $g$ around input $x$ with simplified input $x'$.  Moreover, $M$ is the number of input features.  
-
-Give an expression for the explanation model $g$ in the case where all attributes are meaningless, and interpret this expression.  Secondly, give an expression for the relative contribution of feature $i$ to the explanation model.  
-
-Expression where all attributes are meaningless:
-$g(x') = \phi_0$
-
-If attributes carry no information, the model's prediction would be reliant on only the value of $\phi_0$. Therefore, since $x$ is not in the equation, regardless of what is inputted, the prediction is constant.
-
-Expression for the relative contribution of feature $i$:
-$g(x') = \phi_0 + \phi_ix'i$
-
-where $x'_i$ is the value of feature i, and $\phi_i$ is the amount of change in prediction based on $i$'s change from its original value.
-
-#
 Part of having an explainable model is being able to implement the algorithm from scratch.  Let's try and do this with `KNN`.  Write a function entitled `chebychev` that takes in two vectors and outputs the Chebychev or $L^\infty$ distance between said vectors.  I will test your function on two vectors below.  Then, write a `nearest_neighbors` function that finds the user specified $k$ nearest neighbors according to a user specified distance function (in this case $L^\infty$) to a user specified data point observation. 
 
 
